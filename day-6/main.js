@@ -100,9 +100,6 @@ fs.readFile(filePath, {encoding: 'utf-8'}, (err, data) => {
 			youPathToRoot.shift()
 		}
 
-		console.log(sanPathToRoot.map(so => so.name));
-		console.log(youPathToRoot.map(so => so.name));
-
 		console.log('Total jumps:', sanPathToRoot.length + youPathToRoot.length);
 	} else {
 		console.log(err);
